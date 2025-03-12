@@ -7,6 +7,6 @@ int subtract(const int a, const int b);
 
 int multiply(const int a, const int b);
 
-int divide(const float a, const float b);
+int divide(const int a, const int b);
 
 #endif
