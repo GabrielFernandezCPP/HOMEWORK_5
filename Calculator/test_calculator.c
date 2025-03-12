@@ -112,7 +112,6 @@ void test_DivPosAndNegNumbers(void) {
     TEST_ASSERT_EQUAL(-2, divide(4, -2));
 }
 
-/*
 void test_DivNegNumbers(void) {
     TEST_ASSERT_EQUAL(2, divide(-10, -5));
 }
@@ -146,7 +145,7 @@ int main(void) {
     UNITY_BEGIN();
     RUN_TEST(test_DivPosNumbers);
     RUN_TEST(test_DivPosAndNegNumbers);
-    //RUN_TEST(test_DivNegNumbers);
+    RUN_TEST(test_DivNegNumbers);
     //RUN_TEST(test_DivZero);
 
     //RUN_TEST(test_DivideByZero);
