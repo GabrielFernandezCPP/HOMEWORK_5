@@ -46,11 +46,11 @@ void test_sub_positive_numbers(void) {
     TEST_ASSERT_EQUAL(1, subtract(3, 2)); //We expect this to be 1
 }
 
-/*
 void test_sub_positive_and_negative_numbers(void) {
     TEST_ASSERT_EQUAL(9, subtract(5, -4)); //Expect to be 9
 }
 
+/*
 void test_sub_negative_numbers(void) {
     TEST_ASSERT_EQUAL(1, subtract(-3, -4));
 }
@@ -74,7 +74,7 @@ void test_sub_underflow(void) {
 int main(void) {
     UNITY_BEGIN();
     RUN_TEST(test_sub_positive_numbers);
-    //RUN_TEST(test_sub_positive_and_negative_numbers);
+    RUN_TEST(test_sub_positive_and_negative_numbers);
     //RUN_TEST(test_sub_negative_numbers);
     //RUN_TEST(test_sub_zero);
     
