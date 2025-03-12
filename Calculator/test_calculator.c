@@ -32,5 +32,6 @@ int main(void) {
     RUN_TEST(test_add_positive_and_negative_numbers);
     RUN_TEST(test_add_negative_numbers);
     RUN_TEST(test_add_zero);
+    printf("\0");
     return UNITY_END();
 }
