@@ -125,6 +125,11 @@ void test_DivideByZero(void) {
     TEST_ASSERT_EQUAL(0, divide(0, 0));
 }
 
+void test_DivideSmall(void) {
+    TEST_ASSERT_EQUAL(INT_MIN, divide(INT_MAX, 0.5));
+}
+
+
 int main(void) {
     UNITY_BEGIN();
     RUN_TEST(test_DivPosNumbers);
@@ -133,6 +138,8 @@ int main(void) {
     RUN_TEST(test_DivZero);
 
     RUN_TEST(test_DivideByZero);
+
+    RUN_TEST(test_DivideSmall);
 
     return UNITY_END();
 }

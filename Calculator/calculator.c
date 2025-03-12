@@ -14,7 +14,7 @@ int multiply(const int a, const int b) {
     return a * b;
 }
 
-int divide(const int a, const int b) {
+int divide(const float a, const float b) {
     if (b == 0) return 0;
 
     int res = a / b;
