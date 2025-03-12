@@ -94,12 +94,10 @@ void test_MultOver(void) {
     TEST_ASSERT_TRUE(result < 0);
 }
 
-/*
 void test_MultUnder(void) {
     int result = multiply(INT_MIN, -2);
     TEST_ASSERT_TRUE(result > 0);
 }
-*/
 
 int main(void) {
     UNITY_BEGIN();
@@ -109,7 +107,7 @@ int main(void) {
     RUN_TEST(test_MultZero);
     
     RUN_TEST(test_MultOver);
-    //RUN_TEST(test_MultUnder);
+    RUN_TEST(test_MultUnder);
 
     return UNITY_END();
 }
