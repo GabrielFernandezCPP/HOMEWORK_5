@@ -130,13 +130,10 @@ void test_DivOver(void) {
     TEST_ASSERT_TRUE(result < 0);
 }
 
-/*
 void test_DivUnder(void) {
     int result = divide(INT_MIN, 0.5);
     TEST_ASSERT_TRUE(result >= 0); //INT_MIN could be 0 so got to account for that.
 }
-
-*/
 
 int main(void) {
     UNITY_BEGIN();
@@ -148,7 +145,7 @@ int main(void) {
     RUN_TEST(test_DivideByZero);
     
     RUN_TEST(test_DivOver);
-    //RUN_TEST(test_DivUnder);
+    RUN_TEST(test_DivUnder);
 
     return UNITY_END();
 }
