@@ -10,7 +10,7 @@ int subtract(const int a, const int b) {
 
 
 int multiply(const int a, const int b) {
-    return 0;//a * b;
+    return a * b;
 }
 
 /*

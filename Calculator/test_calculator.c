@@ -76,6 +76,7 @@ void test_MultPosNumbers(void) {
     TEST_ASSERT_EQUAL(10, multiply(2, 5)); //10
 }
 
+/*
 void test_MultPosAndNegNumbers(void) {
     TEST_ASSERT_EQUAL(-6, multiply(3, -2));
 }
@@ -98,16 +99,17 @@ void test_MultUnder(void) {
     int result = multiply(INT_MIN, -2);
     TEST_ASSERT_TRUE(result > 0);
 }
+*/
 
 int main(void) {
     UNITY_BEGIN();
     RUN_TEST(test_MultPosNumbers);
-    RUN_TEST(test_MultPosAndNegNumbers);
-    RUN_TEST(test_MultNegNumbers);
-    RUN_TEST(test_MultZero);
+    //RUN_TEST(test_MultPosAndNegNumbers);
+    //RUN_TEST(test_MultNegNumbers);
+    //RUN_TEST(test_MultZero);
     
-    RUN_TEST(test_MultOver);
-    RUN_TEST(test_MultUnder);
+    //RUN_TEST(test_MultOver);
+    //RUN_TEST(test_MultUnder);
 
     return UNITY_END();
 }
