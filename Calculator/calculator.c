@@ -8,11 +8,12 @@ int subtract(const int a, const int b) {
     return a - b;
 }
 
-/*
+
 int multiply(const int a, const int b) {
-    return a * b;
+    return 0;//a * b;
 }
 
+/*
 int divide(const int a, const int b) {
     return a / b;
 }

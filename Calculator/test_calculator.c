@@ -69,15 +69,45 @@ void test_sub_underflow(void) {
     TEST_ASSERT_TRUE(result > 0); //Checks if an underflow has occurred
 }
 
+
+
+//MULTIPLY TESTS
+void test_MultPosNumbers(void) {
+    TEST_ASSERT_EQUAL(10, multiply(2, 5)); //10
+}
+
+void test_MultPosAndNegNumbers(void) {
+    TEST_ASSERT_EQUAL(-6, multiply(3, -2));
+}
+
+void test_MultNegNumbers(void) {
+    TEST_ASSERT_EQUAL(50, multiply(-10, -5));
+}
+
+void test_MultZero(void) {
+    TEST_ASSERT_EQUAL(0, multiply(9999, 0));
+    TEST_ASSERT_EQUAL(0, multiply(-9999, 0));
+}
+
+void test_MultOver(void) {
+    int result = multiply(INT_MAX, 2);
+    TEST_ASSERT_TRUE(result < 0);
+}
+
+void test_MultUnder(void) {
+    int result = multiply(INT_MIN, -2);
+    TEST_ASSERT_TRUE(result > 0);
+}
+
 int main(void) {
     UNITY_BEGIN();
-    RUN_TEST(test_sub_positive_numbers);
-    RUN_TEST(test_sub_positive_and_negative_numbers);
-    RUN_TEST(test_sub_negative_numbers);
-    RUN_TEST(test_sub_zero);
+    RUN_TEST(test_MultPosNumbers);
+    RUN_TEST(test_MultPosAndNegNumbers);
+    RUN_TEST(test_MultNegNumbers);
+    RUN_TEST(test_MultZero);
     
-    RUN_TEST(test_sub_overflow);
-    RUN_TEST(test_sub_underflow);
+    RUN_TEST(test_MultOver);
+    RUN_TEST(test_MultUnder);
 
     return UNITY_END();
 }
