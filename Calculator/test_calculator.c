@@ -54,12 +54,12 @@ void test_sub_negative_numbers(void) {
     TEST_ASSERT_EQUAL(1, subtract(-3, -4));
 }
 
-/*
 void test_sub_zero(void) {
     TEST_ASSERT_EQUAL(10, subtract(10, 0));
     TEST_ASSERT_EQUAL(0, subtract(0, 0));
 }
 
+/*
 void test_sub_overflow(void) {
     int result = subtract(INT_MAX, -1);
     TEST_ASSERT_TRUE(result < 0); //Checks if an overflow occurred
@@ -76,7 +76,7 @@ int main(void) {
     RUN_TEST(test_sub_positive_numbers);
     RUN_TEST(test_sub_positive_and_negative_numbers);
     RUN_TEST(test_sub_negative_numbers);
-    //RUN_TEST(test_sub_zero);
+    RUN_TEST(test_sub_zero);
     
     //RUN_TEST(test_sub_overflow);
     //RUN_TEST(test_sub_underflow);
