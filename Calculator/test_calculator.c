@@ -76,11 +76,11 @@ void test_MultPosNumbers(void) {
     TEST_ASSERT_EQUAL(10, multiply(2, 5)); //10
 }
 
-/*
 void test_MultPosAndNegNumbers(void) {
     TEST_ASSERT_EQUAL(-6, multiply(3, -2));
 }
 
+/*
 void test_MultNegNumbers(void) {
     TEST_ASSERT_EQUAL(50, multiply(-10, -5));
 }
@@ -104,7 +104,7 @@ void test_MultUnder(void) {
 int main(void) {
     UNITY_BEGIN();
     RUN_TEST(test_MultPosNumbers);
-    //RUN_TEST(test_MultPosAndNegNumbers);
+    RUN_TEST(test_MultPosAndNegNumbers);
     //RUN_TEST(test_MultNegNumbers);
     //RUN_TEST(test_MultZero);
     
