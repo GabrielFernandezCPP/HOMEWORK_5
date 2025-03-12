@@ -64,12 +64,10 @@ void test_sub_overflow(void) {
     TEST_ASSERT_TRUE(result < 0); //Checks if an overflow occurred
 }
 
-/*
 void test_sub_underflow(void) {
     int result = subtract(INT_MIN, 1);
     TEST_ASSERT_TRUE(result > 0); //Checks if an underflow has occurred
 }
-*/
 
 int main(void) {
     UNITY_BEGIN();
@@ -79,7 +77,7 @@ int main(void) {
     RUN_TEST(test_sub_zero);
     
     RUN_TEST(test_sub_overflow);
-    //RUN_TEST(test_sub_underflow);
+    RUN_TEST(test_sub_underflow);
 
     return UNITY_END();
 }
