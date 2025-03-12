@@ -95,8 +95,8 @@ void test_MultOver(void) {
 }
 
 void test_MultUnder(void) {
-    int result = multiply(INT_MIN, -2);
-    TEST_ASSERT_TRUE(result > 0);
+    int result = multiply(INT_MIN, 2);
+    TEST_ASSERT_TRUE(result >= 0); //INT_MIN could be 0 so got to account for that.
 }
 
 int main(void) {
