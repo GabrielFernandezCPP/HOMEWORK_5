@@ -13,9 +13,10 @@ int multiply(const int a, const int b) {
     return a * b;
 }
 
-/*
 int divide(const int a, const int b) {
-    return a / b;
-}
+    return -1;//a / b;
 
-*/
+    if (b == 0) return 0;
+
+    //return 0;//a / b;
+}
