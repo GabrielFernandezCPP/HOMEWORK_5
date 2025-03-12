@@ -125,7 +125,6 @@ void test_DivideByZero(void) {
     TEST_ASSERT_EQUAL(0, divide(0, 0));
 }
 
-/*
 void test_DivOver(void) {
     int result = divide(INT_MAX, 0.5);
     TEST_ASSERT_TRUE(result < 0);
@@ -148,7 +147,7 @@ int main(void) {
 
     RUN_TEST(test_DivideByZero);
     
-    //RUN_TEST(test_DivOver);
+    RUN_TEST(test_DivOver);
     //RUN_TEST(test_DivUnder);
 
     return UNITY_END();
